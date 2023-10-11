@@ -1,0 +1,234 @@
+1.
+
+suma=0
+i=0
+for i in range (1,101):
+    suma=suma+i
+    print(i)
+    
+print(suma)
+
+
+2.
+
+produsul=1
+for i in range (0,9):
+    produsul=produsul*i
+
+print(produsul)
+
+
+
+3.
+
+suma=0
+i=0
+a=0
+for i in range (0,100):
+    if a!=20:
+     if i%2!=0:
+      print(i)
+      a=a+1
+
+
+4.
+
+n= int(input("enter n:"))
+m= int(input("enter m:"))
+while n!=m:
+    if n>m:
+        n=n-m
+    else:
+        m-=n
+
+print (n)
+
+
+5.
+
+factorial=int(input("the factorial number is:"))
+suma=1
+for i in range (1,factorial+1):
+    suma=suma*i
+
+print (suma)
+
+
+6.
+
+n=int(input())
+i=2
+ok=0
+for i in range (2,n):
+    if n%i==0:
+        ok=1
+
+if ok==0:
+    print ("este")
+else:
+    print ("nu este") 
+
+7.
+
+v=["luni","marti","miercuri","joi","vineri","sambata","duminica"]
+ziua=int(input("scrie ziua:"))
+print (v[ziua-1])
+
+
+8.
+
+n=int(input("numarul este:"))
+if n%2==0:
+    print("Numarul este par")
+else:
+    print("Numarul nu este par")
+
+
+9.
+
+an=int(input("an:"))
+if an%400==0 or (an%4==0 and an%100!=0):
+    print("aceste este un an bisect")
+else:
+    print("nu este an bisect")
+
+10.
+
+n=int(input("primul numarul este:"))
+m=int(input("al doilea numar este:"))
+print(m+n)
+
+11.
+
+n=int(input("numarul este:"))
+
+if n<0:
+    print("numarul este negativ")
+else:
+    print("numarul este pozitiv")
+
+12.
+
+m=int(input("pana unde vrei:"))
+v=[]
+v.append(1)
+v.append(1)
+for i in range(2,m,1):
+    v.append(v[i-1]+v[i-2])
+    print(v[i])
+
+13.
+
+
+lista = []
+n = int(input("Enter number of elements:"))
+suma=0
+
+for i in range(0, n):
+    element = int(input())
+    lista.append(element)  
+
+for i in range(0,n):
+    suma=suma+lista[i]
+
+print("Suma este:")
+print(suma)
+
+for i in range(0,n):
+    media=suma/n
+
+print("Media este:")
+print(media)
+
+
+14.
+
+lista = []
+n = int(input("Enter number of elements:"))
+maxim=0
+
+for i in range(0, n):
+    element = int(input())
+    lista.append(element)  
+
+minim=lista[0]
+
+for i in range(0, n):
+    if lista[i]>maxim:
+     maxim=lista[i]
+
+print("Maximul este:")
+print(maxim)
+
+for i in range(0, n):
+    if lista[i]<minim:
+       minim=lista[i]
+
+print("Minimul este:")
+print(minim)
+
+
+15.
+
+lista = []
+n = int(input("Enter number of elements:"))
+
+for i in range(0, n):
+    element = int(input())
+    lista.append(element)  
+
+b=1
+while b==1:
+  b=0
+  for i in range(0,n-1):
+         if lista[i]>lista[i+1]:
+            aux=lista[i]
+            lista[i]=lista[i+1]
+            lista[i+1]=aux
+            b=1
+
+
+for i in range(0, n):
+    print(lista[i],end="")
+    print(" ",end="")     
+
+
+
+16.
+
+import math
+a = int(input("Enter a:"))
+b = int(input("Enter b:"))
+c = int(input("Enter c:"))
+
+delta=b*b-(4*a*c)
+delta2=math.sqrt(delta)
+
+x1=(abs(b)+delta2)/2
+x2=(abs(b)-delta2)/2
+
+print("x1 este:")
+print(x1)
+print("x2 este:")
+print(x2)
+
+
+17.
+
+a = int(input("Enter a:"))
+b = int(input("Enter b:"))
+c = int(input("Enter c:"))
+if a+b+c==180:
+ print("aceste unghiuri pot reprezenta un triunghi")
+else:
+ print("aceste unghiuri nu pot reprezenta un triunghi")
+
+
+
+
+
+
+
+
+
+
